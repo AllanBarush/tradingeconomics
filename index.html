@@ -60,6 +60,12 @@ ol.temas .tg{display:block;font-family:'Lora',Georgia,serif;font-style:italic;co
 ul.dir{list-style:none;margin-top:24px}ul.dir li{padding:10px 0 10px 26px;position:relative;font-size:15.5px;border-bottom:1px solid var(--rule)}ul.dir li::before{content:"";position:absolute;left:2px;top:19px;width:8px;height:8px;background:var(--acc);border-radius:50%}
 </style>
 <style>
+.pwm-modo-portada{background:#0B1626;padding:0}
+.pwm-cover{display:block;width:min(880px,100%);margin:0 auto;height:auto}
+.pwm-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.pwm-cont2{max-width:880px;margin:0 auto;padding:22px 18px 34px;text-align:center}
+</style>
+<style>
 /* ==== Hero de portada PWM (replica del folleto) ==== */
 .pwm-hero{position:relative;padding:0;text-align:center;overflow:hidden;background:#0B1626}
 .pwm-foto{position:absolute;inset:0;background-size:cover;background-position:center 22%;
@@ -100,15 +106,10 @@ ul.dir{list-style:none;margin-top:24px}ul.dir li{padding:10px 0 10px 26px;positi
 .pwm-iada small{font-weight:500;font-size:8px;letter-spacing:.16em;display:block}
 @media(max-width:560px){.pwm-cont{padding-top:120px}.pwm-oro img{height:34px}}
 </style></head><body>
-<header class="hero pwm-hero">
- <div class="pwm-foto" style="background-image:url('portada.jpg')"></div>
- <div class="pwm-velo"></div>
- <div class="pwm-cont">
-  <div class="pwm-eyebrow">Executive Program</div>
-  <h1>TRADING ECONOMICS</h1>
-  <div class="pwm-sub">The Chief Economist &amp; Market Intelligence Program</div>
-  <div class="pwm-brand">Private Wealth Management</div>
-  <div class="pwm-mes">Agosto 2026</div>
+<header class="hero pwm-hero pwm-modo-portada">
+ <img class="pwm-cover" src="portada.jpg" alt="Trading Economics — The Chief Economist &amp; Market Intelligence Program · Private Wealth Management · Agosto 2026">
+ <h1 class="pwm-sr">Trading Economics — The Chief Economist &amp; Market Intelligence Program</h1>
+ <div class="pwm-cont2">
   <div class="chips">
    <span class="chip"><b>Inicia 31 de agosto de 2026</b></span>
    <span class="chip">8 sesiones · 16 horas</span>
@@ -116,11 +117,6 @@ ul.dir{list-style:none;margin-top:24px}ul.dir li{padding:10px 0 10px 26px;positi
    <span class="chip">MXN $53,000 + TAX</span>
   </div>
   <div class="hero-ctas"><a class="btn btn-primary" href="#rm-enroll">Inscr&iacute;bete</a><a class="btn btn-ghost" href="#temario">Ver temario</a></div>
- </div>
- <div class="pwm-claret">(Private Wealth Bankers, High-Net-Worth Individuals and Families)</div>
- <div class="pwm-oro">
-  <span class="pwm-iada">IADA<small>Instituto de Alta Direcci&oacute;n<br>An&aacute;huac Business School</small></span>
-  <img src="pwm-seal.png" alt="Private Wealth Management Institute">
  </div>
 </header>
 
